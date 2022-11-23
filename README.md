@@ -1,2 +1,2 @@
-# useAsync
- Hook for handling Promises
+# useAsync ![](https://shields.io/badge/-unstable-red)
+ Hook for handling Promises.

@@ -1,0 +1,26 @@
+{
+  "name": "use-async",
+  "version": "1.0.0",
+  "description": "Hook for handling Promises",
+  "main": "dist/index.js",
+  "types": "dist/@types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:Billocap/useAsync"
+  },
+  "author": "Gabriel Quintino",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "typescript": "^4.9.3"
+  }
+}
