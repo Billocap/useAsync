@@ -62,6 +62,14 @@ function PromiseState(state: State) {
   }
 }
 
+interface HookOptions {
+  persistent: boolean,
+  defaults: {
+    value: any,
+    reason: any
+  }
+}
+
 /**
  * Wraps a `async function` and gives you more control over its `Promise`.
  * 
@@ -72,6 +80,11 @@ function useAsync<T>(callback: AsyncFunction<T>, args: any[]): AsyncControl<T>
 function useAsync<T>(callback: AsyncFunction<T>, options: HookOptions): AsyncControl<T>
 function useAsync<T>(callback: AsyncFunction<T>, args: any[], options: HookOptions): AsyncControl<T>
 
+/**
+ * Wraps a `async function` and gives you more control over its `Promise`.
+ * 
+ * @param callback Wrapped function.
+ */
 function useAsync<T>(callback: AsyncFunction<T>, args?: any[] | HookOptions, options?: HookOptions) {
   const config = useMemo(() => Array.isArray(args) ? options : args, [args, options])
   

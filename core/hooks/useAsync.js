@@ -35,6 +35,11 @@ function PromiseState(state) {
         }
     };
 }
+/**
+ * Wraps a `async function` and gives you more control over its `Promise`.
+ *
+ * @param callback Wrapped function.
+ */
 function useAsync(callback, args, options) {
     const config = useMemo(() => Array.isArray(args) ? options : args, [args, options]);
     const [value, setValue] = useState(config?.defaults?.value ?? null);

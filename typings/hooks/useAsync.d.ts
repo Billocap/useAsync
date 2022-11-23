@@ -18,6 +18,13 @@ interface AsyncControl<T> {
     Rejected: StateComponent<any>;
     Settled: StateComponent;
 }
+interface HookOptions {
+    persistent: boolean;
+    defaults: {
+        value: any;
+        reason: any;
+    };
+}
 /**
  * Wraps a `async function` and gives you more control over its `Promise`.
  *
