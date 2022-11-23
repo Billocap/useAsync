@@ -20,12 +20,12 @@
   "author": "Gabriel Quintino",
   "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.9",
+    "@types/react": "^16.14.34",
+    "@types/react-dom": "^16.9.17",
     "typescript": "^4.9.3"
   }
 }
