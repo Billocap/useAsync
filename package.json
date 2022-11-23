@@ -2,8 +2,8 @@
   "name": "use-async",
   "version": "1.0.0",
   "description": "Hook for handling Promises",
-  "main": "index.js",
-  "types": "@types/index.d.ts",
+  "main": "core/index.js",
+  "types": "core/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch"
@@ -14,8 +14,7 @@
   },
   "files": [
     "README.md",
-    "core/**/*.js",
-    "core/**/*.d.ts"
+    "core/**/*"
   ],
   "author": "Gabriel Quintino",
   "license": "ISC",
