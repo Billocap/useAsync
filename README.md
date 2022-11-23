@@ -1,5 +1,8 @@
 # useAsync
-![](https://shields.io/badge/-experimental-orange) ![](https://shields.io/badge/include-types-blue)
+![State Badge](https://shields.io/badge/-experimental-orange)
+![Types Badge](https://shields.io/badge/types-TypeScript-blue)
+![React Badge](https://shields.io/github/package-json/dependency-version/Billocap/useAsync/react)
+![React DOM Badge](https://shields.io/github/package-json/dependency-version/Billocap/useAsync/react-dom)
 
 `useAsync` is a hook that wraps an `async function` and give you more control over its [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
