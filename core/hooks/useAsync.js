@@ -44,7 +44,7 @@ function useAsync(callback, args, options) {
     const config = useMemo(() => Array.isArray(args) ? options : args, [args, options]);
     const [value, setValue] = useState(config?.defaults?.value ?? null);
     const [reason, setReason] = useState(config?.defaults?.reason ?? null);
-    const [state, setState] = useState(PromiseState(State.PENDING));
+    const [state, setState] = useState(PromiseState(State.IDLE));
     const [promise, setPromise] = useState(null);
     const mounted = useRef(false);
     const setData = (value) => {

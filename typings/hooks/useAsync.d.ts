@@ -9,6 +9,7 @@ interface AsyncControl<T> {
     reason: any;
     trigger: (...args: any[]) => Promise<T> | undefined;
     cancel: () => void;
+    idle: () => void;
     resolve: (value: T | Promise<T>) => void;
     reject: (reason: any) => void;
     Idle: StateComponent;

@@ -28,6 +28,7 @@ interface AsyncControl<T> {
   reason: any,
   trigger: (...args: any[]) => Promise<T> | undefined,
   cancel: () => void,
+  idle: () => void,
   resolve: (value: T | Promise<T>) => void,
   reject: (reason: any) => void,
   Idle: StateComponent,
@@ -91,7 +92,7 @@ function useAsync<T>(callback: AsyncFunction<T>, args?: any[] | HookOptions, opt
   const [value, setValue] = useState<T | null>(config?.defaults?.value ?? null)
   const [reason, setReason] = useState<any>(config?.defaults?.reason ?? null)
 
-  const [state, setState] = useState(PromiseState(State.PENDING))
+  const [state, setState] = useState(PromiseState(State.IDLE))
   const [promise, setPromise] = useState<PromiseController<T> | null>(null)
 
   const mounted = useRef(false)
