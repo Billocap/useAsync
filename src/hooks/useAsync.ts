@@ -23,14 +23,6 @@ enum State {
   SETTLED = "settled"
 }
 
-interface HookOptions {
-  persistent: boolean,
-  defaults: {
-    value: any,
-    reason: any
-  }
-}
-
 interface AsyncControl<T> {
   value: T | null,
   reason: any,

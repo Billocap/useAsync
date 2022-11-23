@@ -4,13 +4,6 @@ interface WithRenderProps<T> {
     render?: (value?: T) => any;
 }
 type StateComponent<T = undefined> = (props: PropsWithChildren<WithRenderProps<T>>) => JSX.Element;
-interface HookOptions {
-    persistent: boolean;
-    defaults: {
-        value: any;
-        reason: any;
-    };
-}
 interface AsyncControl<T> {
     value: T | null;
     reason: any;
